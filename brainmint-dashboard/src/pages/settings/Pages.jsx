@@ -1,7 +1,7 @@
 // FILE: src/pages/settings/Pages.jsx
 import React, { useState, useEffect } from "react";
 
-const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
+const API_BASE = "https://brainmint-v1-1.onrender.com/api";
 
 export default function Pages({ user }) {
   const userId = user?.id || null;
