@@ -9,7 +9,7 @@ import {
   Inbox, ChevronUp, Search, Calendar, Flag, Activity
 } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 const PRIORITY_STYLES = {
   High:   { bg: "bg-red-50",   text: "text-red-600",   border: "border-red-100",   dot: "bg-red-500" },

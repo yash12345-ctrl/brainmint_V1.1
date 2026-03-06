@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo, useCallback } from "react";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 const PRIORITY_COLORS = {
   High:   { bar: "bg-red-500",    text: "text-red-700",    bg: "bg-red-50",    border: "border-red-200" },

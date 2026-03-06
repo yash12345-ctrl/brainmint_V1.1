@@ -8,7 +8,7 @@ import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from "recharts";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 export default function ActiveSprints({ user }) {
   const [page, setPage] = useState("loading");

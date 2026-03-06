@@ -1,7 +1,7 @@
 // FILE: src/pages/settings/Code.jsx
 import React, { useState, useEffect, useRef } from "react";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 const PLATFORMS = [
   {

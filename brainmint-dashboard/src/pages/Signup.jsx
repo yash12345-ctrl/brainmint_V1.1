@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Loader2, UserPlus, ArrowRight, Check, Zap, Shield, Users, ChevronDown, Globe, Lock, Star } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 function Orb({ style }) {
   return <div className="orb" style={style} />;

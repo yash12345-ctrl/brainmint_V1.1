@@ -1,7 +1,7 @@
 // FILE: src/pages/settings/AllWork.jsx
 import React, { useState, useEffect } from "react";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 export default function AllWork({ user }) {
   const userId = user?.id || null;

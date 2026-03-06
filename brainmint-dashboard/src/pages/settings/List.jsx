@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 // ── Status config ────────────────────────────────────────────────
 const STATUS_CONFIG = {

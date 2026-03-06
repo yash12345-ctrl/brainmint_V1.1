@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Clock, AlertCircle, TrendingUp, Calendar, CheckCircle2 } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 export default function Summary({ user }) {
   console.log("👤 USER PROP:", user); // DEBUG

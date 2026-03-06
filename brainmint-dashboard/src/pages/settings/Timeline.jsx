@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ChevronDown, Calendar, Clock, User } from "lucide-react";
 
-const API_BASE_URL = "http://localhost:8000/api";
+const API_BASE_URL = "https://brainmint-v1-1.onrender.com/api";
 
 export default function Timeline({ user }) {
   const [tasks, setTasks] = useState([]);
