@@ -13,26 +13,22 @@ import ActiveSprints from "./pages/ActiveSprints";
 import Report from "./pages/Report";
 import Settings from "./pages/settings/settings";
 
-
 export default function App() {
   const [user, setUser] = useState(null);
   const navigate = useNavigate();
   const location = useLocation();
 
   const handleLogin = (userData) => {
-    console.log("✅ User logged in:", userData);
     setUser(userData);
     navigate("/dashboard");
   };
 
   const handleSignup = (userData) => {
-    console.log("✅ User signed up:", userData);
     setUser(userData);
     navigate("/dashboard");
   };
 
   const handleLogout = () => {
-    console.log("👋 User logged out");
     setUser(null);
     navigate("/login");
   };
@@ -58,12 +54,23 @@ export default function App() {
     );
   }
 
+  // pages where Topbar should appear
+  const showTopbar = ["/sprints", "/report", "/settings"].some((path) =>
+    location.pathname.startsWith(path)
+  );
+
   return (
     <div className="flex w-full h-screen bg-gray-50">
       <Sidebar user={user} />
 
       <div className="flex-1 flex flex-col">
-        <Topbar user={user} onLogout={handleLogout} />
+
+        {showTopbar && (
+          <Topbar
+            user={user}
+            onLogout={handleLogout}
+          />
+        )}
 
         <div className="p-6 overflow-auto h-full">
           <Routes>
@@ -74,6 +81,7 @@ export default function App() {
             <Route path="/settings/*" element={<Settings user={user} />} />
           </Routes>
         </div>
+
       </div>
     </div>
   );
